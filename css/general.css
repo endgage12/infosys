@@ -1,0 +1,100 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-family: 'Anonymous Pro', monospace;
+    color: black;
+}
+
+.main {
+    position: relative;
+    margin-left: 10%;
+    margin-top: 150px;
+}
+
+header {
+    position: relative;
+    background-color: #263238;
+    margin-left: 10%;
+    height: 40px;
+    width: 80%;
+}
+
+#search {
+    position: relative;
+    margin-left: 80%;
+}
+
+#search p {
+    display: inline;
+}
+
+.formSearch {
+    border-radius: 10px;
+    width: 120px;
+    height: 20px;
+}
+
+.btnSearch {
+    border-radius: 10px;
+    width: 60px;
+    height: 20px;
+}
+
+#showDB {
+    position: relative;
+    margin-left: 10%;
+}
+
+.header {
+    position: relative;
+    background-color: #263238;
+    margin-left: 10%;
+    height: 40px;
+    width: 80%;
+}
+
+#returnArrow {
+    min-width: 40px;
+    width: 10%;
+    background-color: #82a4ae;
+    height: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#block1 {
+    position: relative;
+    border: 1px solid saddlebrown;
+    max-width: 40%;
+}
+
+#block1 p {
+    position: relative;
+    margin-left: 10%;
+}
+
+#block1 input {
+    position: relative;
+    margin-left: 10%;
+}
+
+.infoOK {
+    position: relative;
+    background-color: #bedec3;
+}
+
+.infoOK p {
+    margin-left: 10%;
+}
+
+.infoError {
+    position: relative;
+    background-color: #ff525d;
+}
+
+.infoError p {
+    margin-left: 10%;
+}
