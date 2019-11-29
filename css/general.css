@@ -98,3 +98,17 @@ ul {
 .infoError p {
     margin-left: 10%;
 }
+
+#showDB th {
+    border: 1px solid #263238;
+}
+
+#showDB td {
+    border: 1px solid #263238;
+}
+
+#showDB {
+	border: 1px solid #263238;
+    border-collapse: collapse;
+    text-align: center;
+}

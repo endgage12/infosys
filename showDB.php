@@ -9,6 +9,11 @@
         <a href="index.php"><div id="returnArrow"></div></a>
         <div id="returnBody"></div>
     </div>
+    <div id="block3">
+        <form action="to_excel.php" method="POST">
+            <input type="submit" value="В Excel">
+        </form>
+    </div>
 </body>
 </html>
 
@@ -25,12 +30,17 @@
         $result = mysqli_query($link, $query);
         if($result) {
             $rows = mysqli_num_rows($result); //количество полученных строк
-
-            echo "<table id='showDB'><tr><th>Артикул</th><th>Название</th><th>Аудитория</th><th>Срок амортизации</th><th>Ответственный</th></tr>";
+            echo "<table id='showDB'><tr><th>ID</th><th>Артикул</th><th>Фирма</th><th>Модель</th><th>Аудитория</th><th>Год приобретения</th><th>Срок амортизации в годах</th><th>Ответственный</th></tr>";
             for($i = 0; $i < $rows; ++$i) {
                 $row = mysqli_fetch_row($result);
                 echo "<tr>";
-                    for($j = 0; $j < 5; ++$j) echo "<td>$row[$j]</td>";
+                    for($j = 0; $j < 8; ++$j) {
+                        echo "<td>$row[$j]</td>";
+                        $file = 'excel.csv';
+                        $tofile = "'$row[$j]'";
+                        $bom = "\xEF\xBB\xBF";
+                        @file_put_contents($file, $bom . $tofile . file_get_contents($file));
+                    }
                 echo "</tr>";
             }
             echo "</table>";
