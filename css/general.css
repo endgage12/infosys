@@ -44,12 +44,15 @@ header {
 #showDB {
     position: relative;
     margin-left: 10%;
+    margin-top: 100px;
+    max-width: 80%;
 }
 
 .header {
     position: relative;
     background-color: #263238;
     margin-left: 10%;
+    margin-top: -238px;
     height: 40px;
     width: 80%;
 }
@@ -76,6 +79,11 @@ ul {
     margin-left: 10%;
 }
 
+#block1 h3, h4 {
+    position: relative;
+    margin-left: 10%;
+}
+
 #block1 input {
     position: relative;
     margin-left: 10%;
@@ -97,4 +105,18 @@ ul {
 
 .infoError p {
     margin-left: 10%;
+}
+
+#showDB th {
+    border: 1px solid #263238;
+}
+
+#showDB td {
+    border: 1px solid #263238;
+}
+
+#showDB {
+	border: 1px solid #263238;
+    border-collapse: collapse;
+    text-align: center;
 }
