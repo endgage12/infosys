@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Потом придумаю</title>
+        <title>ИНФОРМАЦИОННАЯ СИСТЕМА ИНВЕНТАРНОГО УЧЁТА</title>
         <link rel="stylesheet" href="css/general.css">
         <link href="fonts/AnonymousPro-Regular.ttf" rel="stylesheet">
     </head>
